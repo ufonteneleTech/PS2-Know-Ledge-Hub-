@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PS2 Know Ledge Hub® — Enciclopédia interativa do PlayStation 2</title>
+<meta name="description" content="Enciclopédia interativa e não-oficial sobre o PlayStation 2: história, hardware, modelos, jogos, acessórios, tecnologia e curiosidades — sempre com fontes indicadas.">
+<meta name="theme-color" content="#0b0e16">
+
+<!-- Open Graph -->
+<meta property="og:title" content="PS2 Know Ledge Hub®">
+<meta property="og:description" content="A enciclopédia interativa e não-oficial do PlayStation 2, com história, hardware, catálogo de jogos e quiz.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/PS2-Fat-Console-Set.jpg?width=1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PS2 Know Ledge Hub®">
+<meta name="twitter:description" content="Enciclopédia interativa e não-oficial do PlayStation 2, com história, hardware, catálogo de jogos e quiz.">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/temas.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header" id="topo">
+  <div class="header-inner container">
+    <a class="brand" href="#inicio" aria-label="PS2 Know Ledge Hub, ir para o início">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="20" cy="20" r="6" fill="currentColor"/>
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" class="brand-ring"/>
+        </svg>
+      </span>
+      <span class="brand-text">PS2 Know<em>Ledge</em> Hub<sup>®</sup></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPrincipal" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-principal" id="navPrincipal" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio" class="nav-link" data-nav="inicio">Início</a></li>
+        <li><a href="#historia" class="nav-link" data-nav="historia">História</a></li>
+        <li><a href="#hardware" class="nav-link" data-nav="hardware">Hardware</a></li>
+        <li><a href="#modelos" class="nav-link" data-nav="modelos">Modelos</a></li>
+        <li><a href="#jogos" class="nav-link" data-nav="jogos">Jogos</a></li>
+        <li><a href="#acessorios" class="nav-link" data-nav="acessorios">Acessórios</a></li>
+        <li><a href="#tecnologia" class="nav-link" data-nav="tecnologia">Tecnologia</a></li>
+        <li><a href="#curiosidades" class="nav-link" data-nav="curiosidades">Curiosidades</a></li>
+        <li><a href="#linha-cultural" class="nav-link" data-nav="linha-cultural">Linha Cultural</a></li>
+        <li><a href="#comparador" class="nav-link" data-nav="comparador">Comparador</a></li>
+        <li><a href="#quiz" class="nav-link" data-nav="quiz">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <label for="buscaGlobal" class="sr-only">Pesquisar no acervo</label>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="buscaGlobal" placeholder="Pesquisar jogos, modelos, termos… ( / )" autocomplete="off">
+        <kbd class="search-kbd">/</kbd>
+      </div>
+      <button id="temaToggle" class="icon-btn" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+        <svg class="ico-sol" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="ico-lua" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <button id="favToggle" class="icon-btn" aria-label="Ver favoritos" title="Favoritos">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7.5-4.6-10-9.1C.5 8.3 2.4 5 5.9 5c2 0 3.4 1 6.1 3.6C14.7 6 16.1 5 18.1 5c3.5 0 5.4 3.3 3.9 6.9-2.5 4.5-10 9.1-10 9.1Z"/></svg>
+        <span class="fav-count" id="favCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Resultados de busca instantânea -->
+  <div class="busca-resultados" id="buscaResultados" hidden></div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ===================== HERO / INÍCIO ===================== -->
+  <section class="hero" id="inicio" aria-label="Página inicial">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-disc"><div class="hero-disc-ring"></div><div class="hero-disc-ring"></div><div class="hero-disc-ring"></div></div>
+    </div>
+    <div class="container hero-inner">
+      <p class="boot-line" id="bootLine" aria-hidden="true"></p>
+      <h1 class="hero-title">A enciclopédia interativa do<br><span>PlayStation 2<sup>®</sup></span></h1>
+      <p class="hero-sub">História, hardware, modelos, jogos, acessórios e curiosidades — organizados, pesquisáveis e sempre com a fonte da informação logo ao lado.</p>
+      <div class="hero-cta">
+        <a href="#jogos" class="btn btn-primary">Explorar o catálogo de jogos</a>
+        <a href="#quiz" class="btn btn-ghost">Testar conhecimentos no Quiz</a>
+      </div>
+      <dl class="hero-stats" id="heroStats">
+        <div><dt>Jogos catalogados</dt><dd id="statJogos">—</dd></div>
+        <div><dt>Modelos de console</dt><dd id="statModelos">—</dd></div>
+        <div><dt>Anos de história</dt><dd>≈ 20</dd></div>
+        <div><dt>Fontes citadas</dt><dd id="statFontes">—</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Curiosidade do dia -->
+  <section class="curiosidade-dia container" aria-label="Curiosidade do dia">
+    <div class="card card-curiosidade">
+      <span class="eyebrow">Você sabia?</span>
+      <p id="curiosidadeTexto">Carregando curiosidade…</p>
+      <p class="fonte" id="curiosidadeFonte"></p>
+    </div>
+  </section>
+
+  <!-- ===================== HISTÓRIA ===================== -->
+  <section class="secao" id="historia" aria-labelledby="historia-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">01 — Linha do tempo</span>
+        <h2 id="historia-titulo">História</h2>
+        <p>Do anúncio em 1999 ao encerramento da produção em 2013 — os marcos que definiram o console mais vendido da história.</p>
+      </header>
+
+      <div class="timeline" id="timeline" role="list"></div>
+      <p class="fonte">Fonte: Sony Interactive Entertainment — comunicados históricos; Wikipedia — PlayStation 2 (ponto de partida, fatos conferidos em fontes especializadas).</p>
+    </div>
+  </section>
+
+  <!-- ===================== HARDWARE ===================== -->
+  <section class="secao secao-alt" id="hardware" aria-labelledby="hardware-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">02 — Especificações</span>
+        <h2 id="hardware-titulo">Hardware</h2>
+        <p>Os componentes por trás do console: processamento, gráficos, memória e mídia.</p>
+      </header>
+
+      <div class="hardware-grid" id="hardwareGrid"></div>
+      <p class="fonte">Fonte: Documentação técnica oficial Sony Computer Entertainment; manuais de desenvolvedor do PS2.</p>
+    </div>
+  </section>
+
+  <!-- ===================== MODELOS ===================== -->
+  <section class="secao" id="modelos" aria-labelledby="modelos-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">03 — Revisões SCPH</span>
+        <h2 id="modelos-titulo">Modelos</h2>
+        <p>O PS2 passou por diversas revisões físicas ao longo de sua vida comercial. Compare as principais versões.</p>
+      </header>
+
+      <div class="cards-grid" id="modelosGrid"></div>
+      <p class="fonte">Fonte: Manuais técnicos SCPH; registros de lançamento regionais.</p>
+    </div>
+  </section>
+
+  <!-- ===================== JOGOS ===================== -->
+  <section class="secao secao-alt" id="jogos" aria-labelledby="jogos-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">04 — Catálogo</span>
+        <h2 id="jogos-titulo">Jogos</h2>
+        <p>Catálogo pesquisável do acervo de jogos do PS2, com filtros combináveis.</p>
+      </header>
+
+      <div class="filtros-barra" id="filtrosJogos">
+        <label class="sr-only" for="jogosBusca">Pesquisar jogos</label>
+        <input type="search" id="jogosBusca" placeholder="Pesquisar por título…" autocomplete="off">
+
+        <select id="filtroGenero" aria-label="Filtrar por gênero"><option value="">Gênero (todos)</option></select>
+        <select id="filtroAno" aria-label="Filtrar por ano"><option value="">Ano (todos)</option></select>
+        <select id="filtroDev" aria-label="Filtrar por desenvolvedora"><option value="">Desenvolvedora (todas)</option></select>
+
+        <button type="button" id="limparFiltros" class="btn btn-ghost btn-sm">Limpar filtros</button>
+      </div>
+
+      <p class="filtros-status" id="jogosStatus" aria-live="polite"></p>
+
+      <div class="cards-grid" id="jogosGrid"></div>
+      <p class="vazio" id="jogosVazio" hidden>Nenhum jogo encontrado com esses filtros. Tente ajustar a pesquisa.</p>
+      <p class="fonte">Fontes por jogo indicadas em cada cartão — geralmente MobyGames, GameFAQs ou documentação oficial.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ACESSÓRIOS ===================== -->
+  <section class="secao" id="acessorios" aria-labelledby="acessorios-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">05 — Periféricos</span>
+        <h2 id="acessorios-titulo">Acessórios</h2>
+        <p>Memory Cards, controles, multitaps e outros periféricos oficiais e de terceiros.</p>
+      </header>
+      <div class="cards-grid" id="acessoriosGrid"></div>
+      <p class="fonte">Fonte: Manuais de produto Sony Computer Entertainment.</p>
+    </div>
+  </section>
+
+  <!-- ===================== TECNOLOGIA ===================== -->
+  <section class="secao secao-alt" id="tecnologia" aria-labelledby="tecnologia-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">06 — Sob o capô</span>
+        <h2 id="tecnologia-titulo">Tecnologia</h2>
+        <p>Explicações acessíveis sobre a arquitetura que tornou o PS2 tecnicamente ambicioso para sua época.</p>
+      </header>
+      <div class="tech-accordion" id="techAccordion"></div>
+      <p class="fonte">Fonte: Documentação técnica oficial; artigos especializados de arquitetura de hardware.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CURIOSIDADES ===================== -->
+  <section class="secao" id="curiosidades" aria-labelledby="curiosidades-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">07 — Você sabia?</span>
+        <h2 id="curiosidades-titulo">Curiosidades</h2>
+        <p>Fatos, recordes e detalhes marcantes sobre o console — em formato de cartão giratório.</p>
+      </header>
+      <div class="flip-grid" id="curiosidadesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== LINHA CULTURAL ===================== -->
+  <section class="secao secao-alt" id="linha-cultural" aria-labelledby="cultural-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">08 — Impacto cultural</span>
+        <h2 id="cultural-titulo">Linha do tempo cultural</h2>
+        <p>Como o PS2 se posicionou na cultura pop, na publicidade e na crítica de sua época.</p>
+      </header>
+      <div class="timeline timeline-cultural" id="timelineCultural" role="list"></div>
+      <p class="fonte">Fonte: publicações especializadas da época; arquivos de imprensa.</p>
+    </div>
+  </section>
+
+  <!-- ===================== COMPARADOR ===================== -->
+  <section class="secao" id="comparador" aria-labelledby="comparador-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">09 — Lado a lado</span>
+        <h2 id="comparador-titulo">Comparador</h2>
+        <p>Escolha dois itens do mesmo tipo para comparar especificações lado a lado.</p>
+      </header>
+
+      <div class="comparador-controles">
+        <div class="comparador-tabs" role="tablist" aria-label="Tipo de comparação">
+          <button class="tab" role="tab" aria-selected="true" data-tipo="modelos">Modelos</button>
+          <button class="tab" role="tab" aria-selected="false" data-tipo="jogos">Jogos</button>
+        </div>
+        <div class="comparador-selects">
+          <select id="compA" aria-label="Item A"></select>
+          <span class="vs">vs</span>
+          <select id="compB" aria-label="Item B"></select>
+        </div>
+      </div>
+
+      <div class="comparador-resultado" id="comparadorResultado"></div>
+    </div>
+  </section>
+
+  <!-- ===================== QUIZ ===================== -->
+  <section class="secao secao-alt" id="quiz" aria-labelledby="quiz-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">10 — Teste seus conhecimentos</span>
+        <h2 id="quiz-titulo">Quiz</h2>
+        <p>Perguntas embaralhadas, sem repetição na mesma sessão, com pontuação e conquistas salvas no seu navegador.</p>
+      </header>
+
+      <div class="quiz-shell" id="quizShell">
+        <div class="quiz-inicio" id="quizInicio">
+          <div class="quiz-dificuldades">
+            <button class="chip" data-dif="facil">Fácil</button>
+            <button class="chip" data-dif="medio">Médio</button>
+            <button class="chip" data-dif="especialista">Especialista</button>
+          </div>
+          <button class="btn btn-primary" id="quizIniciar">Começar quiz</button>
+          <p class="quiz-recorde">Melhor pontuação local: <strong id="quizRecorde">0</strong></p>
+        </div>
+
+        <div class="quiz-jogo" id="quizJogo" hidden>
+          <div class="quiz-topo">
+            <span id="quizProgresso">Pergunta 1 de 10</span>
+            <span id="quizPontos">Pontos: 0</span>
+          </div>
+          <p class="quiz-pergunta" id="quizPergunta"></p>
+          <div class="quiz-alternativas" id="quizAlternativas"></div>
+          <p class="quiz-explicacao" id="quizExplicacao" hidden></p>
+          <button class="btn btn-primary" id="quizProxima" hidden>Próxima pergunta</button>
+        </div>
+
+        <div class="quiz-fim" id="quizFim" hidden>
+          <h3>Resultado</h3>
+          <p id="quizResultadoTexto"></p>
+          <div class="quiz-conquistas" id="quizConquistas"></div>
+          <div class="quiz-fim-acoes">
+            <button class="btn btn-primary" id="quizRefazer">Jogar novamente</button>
+            <button class="btn btn-ghost" id="quizCompartilhar">Compartilhar resultado</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE AS FONTES ===================== -->
+  <section class="secao secao-alt" id="sobre-fontes" aria-labelledby="fontes-titulo">
+    <div class="container">
+      <header class="secao-header">
+        <span class="eyebrow">Metodologia</span>
+        <h2 id="fontes-titulo">Sobre as fontes</h2>
+        <p>Como este acervo verifica e cita as informações que publica.</p>
+      </header>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Origem indicada sempre</h3>
+          <p>Toda informação relevante — texto, imagem ou tabela — traz a fonte logo abaixo, com link direto para a página consultada.</p>
+        </div>
+        <div class="card">
+          <h3>Wikipedia como ponto de partida</h3>
+          <p>A Wikipedia é usada para organizar fatos rapidamente, mas dados técnicos e datas são checados contra fontes especializadas antes da publicação.</p>
+        </div>
+        <div class="card">
+          <h3>Imagens com licença livre</h3>
+          <p>Fotografias de hardware usadas no site são de domínio público (Wikimedia Commons, crédito ao fotógrafo). Artes de capa de jogos são protegidas por direitos autorais das publicadoras — por isso apontamos um link para a fonte oficial em vez de reproduzi-las.</p>
+        </div>
+      </div>
+      <p class="fonte">Consulte <code>FONTES.md</code> no repositório do projeto para o registro completo de referências e datas de verificação.</p>
+    </div>
+  </section>
+
+  <!-- ===================== COMUNIDADE / CONTRIBUA ===================== -->
+  <section class="secao" id="comunidade" aria-labelledby="comunidade-titulo">
+    <div class="container comunidade-inner">
+      <header class="secao-header">
+        <span class="eyebrow">11 — Contribua</span>
+        <h2 id="comunidade-titulo">Comunidade</h2>
+        <p>Encontrou uma informação incorreta ou uma fonte melhor? Envie uma sugestão de correção (moderação prevista para a v4.0).</p>
+      </header>
+
+      <form class="form-contribuicao" id="formContribuicao">
+        <div class="form-linha">
+          <label for="ctbSecao">Seção relacionada</label>
+          <select id="ctbSecao" required>
+            <option value="">Selecione…</option>
+            <option>História</option><option>Hardware</option><option>Modelos</option>
+            <option>Jogos</option><option>Acessórios</option><option>Tecnologia</option>
+            <option>Curiosidades</option><option>Outro</option>
+          </select>
+        </div>
+        <div class="form-linha">
+          <label for="ctbTexto">Sugestão ou correção</label>
+          <textarea id="ctbTexto" rows="4" maxlength="600" required placeholder="Descreva a sugestão…"></textarea>
+        </div>
+        <div class="form-linha">
+          <label for="ctbFonte">Fonte sugerida (opcional)</label>
+          <input type="url" id="ctbFonte" placeholder="https://…">
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar sugestão</button>
+        <p class="form-status" id="ctbStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="brand-text small">PS2 Know<em>Ledge</em> Hub<sup>®</sup></p>
+      <p class="footer-desc">Projeto independente e não-oficial de referência sobre o PlayStation 2. PlayStation, PS2 e DualShock são marcas registradas da Sony Interactive Entertainment. Este site não possui vínculo com a Sony.</p>
+    </div>
+    <nav aria-label="Links do rodapé">
+      <a href="#sobre-fontes">Sobre as fontes</a>
+      <a href="#comunidade">Contribua</a>
+      <a href="#topo">Voltar ao topo</a>
+    </nav>
+  </div>
+  <p class="footer-fim">Consulte <code>FONTES.md</code> no repositório para a lista completa de referências e datas de verificação.</p>
+</footer>
+
+<button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo" hidden>↑</button>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Visualização de imagem ampliada">
+  <button class="lightbox-fechar" id="lightboxFechar" aria-label="Fechar">✕</button>
+  <figure>
+    <img id="lightboxImg" src="" alt="">
+    <figcaption>
+      <span id="lightboxLegenda"></span>
+      <span class="fonte" id="lightboxFonte"></span>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- ===================== TOAST ===================== -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="data/jogos.js"></script>
+<script src="data/modelos.js"></script>
+<script src="js/busca.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
