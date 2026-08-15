@@ -1,0 +1,75 @@
+/* ============================================================
+   temas.css — variáveis de tema claro/escuro isoladas
+   PS2 Know Ledge Hub®
+   ============================================================ */
+
+:root {
+  /* Tipografia */
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Raio / sombra / transições compartilhados entre temas */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --transition-tema: background-color .35s ease, color .35s ease, border-color .35s ease;
+}
+
+/* ---------- Tema escuro (padrão) ---------- */
+[data-theme="dark"] {
+  --cor-bg: #0b0e16;
+  --cor-bg-elevado: #121729;
+  --cor-superficie: #171d33;
+  --cor-superficie-hover: #1e2540;
+  --cor-borda: rgba(255, 255, 255, 0.08);
+  --cor-borda-forte: rgba(255, 255, 255, 0.16);
+
+  --cor-texto: #eaedf7;
+  --cor-texto-fraco: #9aa3c0;
+  --cor-texto-mais-fraco: #6b7394;
+
+  --cor-acento: #4c7bf3;
+  --cor-acento-2: #8a6ff0;
+  --cor-acento-3: #35c9c1;
+  --cor-acento-contraste: #ffffff;
+
+  --cor-sucesso: #33c17f;
+  --cor-erro: #f2564b;
+
+  --sombra-card: 0 8px 24px rgba(0,0,0,.35);
+  --sombra-elevada: 0 16px 40px rgba(0,0,0,.45);
+
+  --overlay-scrim: rgba(6, 8, 16, 0.82);
+
+  color-scheme: dark;
+}
+
+/* ---------- Tema claro ---------- */
+[data-theme="light"] {
+  --cor-bg: #f6f7fb;
+  --cor-bg-elevado: #ffffff;
+  --cor-superficie: #ffffff;
+  --cor-superficie-hover: #eef0fb;
+  --cor-borda: rgba(20, 24, 45, 0.1);
+  --cor-borda-forte: rgba(20, 24, 45, 0.18);
+
+  --cor-texto: #131729;
+  --cor-texto-fraco: #4b5170;
+  --cor-texto-mais-fraco: #767c9c;
+
+  --cor-acento: #3358d6;
+  --cor-acento-2: #6c4fd9;
+  --cor-acento-3: #0e8f88;
+  --cor-acento-contraste: #ffffff;
+
+  --cor-sucesso: #1f9d63;
+  --cor-erro: #d33a30;
+
+  --sombra-card: 0 8px 20px rgba(30, 34, 70, .08);
+  --sombra-elevada: 0 20px 40px rgba(30, 34, 70, .14);
+
+  --overlay-scrim: rgba(240, 241, 250, 0.9);
+
+  color-scheme: light;
+}
